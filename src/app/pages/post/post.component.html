@@ -2,19 +2,21 @@
   <div style="padding: 30px"> 
 
 <mat-grid-list cols="4" rowHeight="2:1" style="padding: 5px">
-    <mat-grid-tile>
-        <mat-card appearance="outlined"> 
-            <mat-card-header> [POST-TITLE]</mat-card-header> 
-            <mat-card-content>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore impedit nobis blanditiis, in, maxime tempore nulla. </mat-card-content>
-            <mat-card-actions align="end">
-                <button mat-button>update</button>    
-            </mat-card-actions>
-        </mat-card>
-    </mat-grid-tile>
+        @for (post of posts; track $index) {
 
-    <mat-grid-tile>2</mat-grid-tile>
-    <mat-grid-tile>3</mat-grid-tile>
-    <mat-grid-tile>4</mat-grid-tile>
-  </mat-grid-list>
+            <mat-grid-tile>
+                <mat-card appearance="outlined"> 
+                    <mat-card-header> {{post.title}}</mat-card-header> 
+                    <mat-card-content>{{post.content}} </mat-card-content>
+                    <mat-card-actions align="end">
+                        <button mat-button>update</button>    
+                    </mat-card-actions>
+                </mat-card>
+            </mat-grid-tile>
+
+
+        }
+ 
+</mat-grid-list>
 
   </div>

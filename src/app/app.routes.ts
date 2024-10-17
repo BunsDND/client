@@ -6,5 +6,5 @@ import { WelcomeComponent } from './pages/welcome/welcome.component';
 export const routes: Routes = [
     {path: 'about', component: AboutComponent}, 
     {path: 'post', component: PostComponent}, 
-    {path: 'welcome', component: WelcomeComponent} 
+    {path: '', component: WelcomeComponent} 
 ];
