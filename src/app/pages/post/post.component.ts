@@ -3,6 +3,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import { PostService } from './post.service';
+import { Post_i } from './post.interface';
 
 
 @Component({
@@ -13,12 +14,11 @@ import { PostService } from './post.service';
   styleUrl: './post.component.css'
 })
 export class PostComponent {
-
   constructor(private postService: PostService){
 
   }
 
-  posts : any[] =  [
+  posts : Post_i[] =  [
   ];
   
 
@@ -28,6 +28,7 @@ export class PostComponent {
     this.postService.getAll().subscribe((data) => {
 
       this.posts = data;
+      
 
     }) ;
 
