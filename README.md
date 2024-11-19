@@ -1,27 +1,39 @@
-# Client
+# Movies Anywhere
+Movies Anywhere is a mobile app designed to enhance the movie-watching experience by enabling users to browse movies, book tickets with partnered cinemas, and manage bookings effortlessly.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.7.
+# Features
+* Movie Discovery: Search and browse movies categorized by genres.
+* Seat Booking: Select preferred seats and times for upcoming shows.
+* E-Tickets: Receive digital tickets with QR codes for seamless entry.
+* User-Friendly Interface: Aesthetic and intuitive design to maximize user engagement.
 
-## Development server
+# Course Overview
+This project demonstrates the application of modern development principles for a full-stack mobile app, including:
+* Basic React Native Components: Understanding and using core components to build dynamic UIs.
+* Database Design: Leveraging database systems to manage user accounts, bookings, and movie details.
+* User Registration & Authentication: Implementing secure user onboarding and login processes.
+* Deployment: Launching and managing the app for end-user accessibility.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+# Tech Stack
+* React Native: Framework for building cross-platform mobile applications.
+* Firebase: Backend for user authentication and real-time database management.
+* HTML, CSS, JavaScript: Core technologies for designing and scripting the app.
 
-## Code scaffolding
+#Index Screen 
+<img src="assets\index.jpg"> 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Home Screen 
+<img src="assets\home.jpg"> 
 
-## Build
+# Location Screen 
+<img src="assets\location.jpg"> 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# Profile Screen 
+<img src="assets\profile.jpg"> 
 
-## Running unit tests
+# Demo/ Onboarding Screen
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
