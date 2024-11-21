@@ -4,6 +4,8 @@ import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import { PostService } from './post.service';
 import { Post_i } from './post.interface';
+import { MatDialog } from '@angular/material/dialog';
+import { PostDialogComponent } from './post-dialog/post-dialog.component';
 
 
 @Component({
@@ -14,24 +16,19 @@ import { Post_i } from './post.interface';
   styleUrl: './post.component.css'
 })
 export class PostComponent {
-  constructor(private postService: PostService){
+  constructor(private postService: PostService, 
+    private matDialog: MatDialog){}
 
-  }
-
-  posts : Post_i[] =  [
-  ];
+  posts : Post_i[] =  [];
   
 
-  ngOnInit(){ //built-in method in angular, aka life 
-    //  console.log("Testing OnInit")
-
-    this.postService.getAll().subscribe((data) => {
-
-      this.posts = data;
-      
-
-    }) ;
-
+  ngOnInit(){
+    this.postService.getAll().subscribe((data) => { this.posts = data; }) ;
   }
+
+onFormAction(){
+  //console.log('onFormAction');
+  this.matDialog.open(PostDialogComponent);
+}
 
 }

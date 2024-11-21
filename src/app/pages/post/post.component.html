@@ -1,7 +1,8 @@
 
   <div style="padding: 30px"> 
-
+<button mat-button (click)="onFormAction()"> new post</button>
 <mat-grid-list cols="4" rowHeight="2:1" style="padding: 5px">
+
         @for (post of posts; track $index) {
 
             <mat-grid-tile>
