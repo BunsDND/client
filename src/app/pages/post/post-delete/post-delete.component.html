@@ -1,25 +1,22 @@
 <h2 >Hello Kupal! </h2>
-<form [formGroup]="postForm" (ngSubmit)=" onSubmit()"> 
+<form [formGroup]="postForm" (ngSubmit)="onSubmit()"> 
     <mat-dialog-content> 
 
     <mat-form-field>
             <mat-label>Title</mat-label>
-            <input formControlName="title">
+            <input matInput formControlName="title" readonly>
           </mat-form-field>
     
           <mat-form-field>
             <mat-label>Content</mat-label>
-            <textarea matInput formControlName="content"></textarea>
+            <input matInput formControlName="content" readonly>
           </mat-form-field>
     
     </mat-dialog-content>
     
     
     <mat-dialog-actions> 
-    <button mat-button mat-dialog-close> Close</button> 
-    <button type="submit" mat-dialog-close> Submit</button> 
+    <button type="submit" mat-dialog-close> Delete</button> 
     
     </mat-dialog-actions>
 </form>
-
-

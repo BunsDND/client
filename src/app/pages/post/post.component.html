@@ -10,7 +10,8 @@
                     <mat-card-header> {{post.title}}</mat-card-header> 
                     <mat-card-content>{{post.content}} </mat-card-content>
                     <mat-card-actions align="end">
-                        <button mat-button>update</button>    
+                        <button mat-button (click)="onUpdate(post)">update</button>    
+                        <button mat-button (click)="onDelete(post)">delete</button>    
                     </mat-card-actions>
                 </mat-card>
             </mat-grid-tile>
@@ -20,4 +21,9 @@
  
 </mat-grid-list>
 
+  </div>
+  <div *ngFor="let post of posts">
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.content }}</p>
+    <button (click)="onDelete(post)">Delete</button>
   </div>
