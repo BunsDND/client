@@ -1,33 +1,79 @@
 mat-grid-tile {
-    background: lightblue;
+    /* background: lightblue; */
   }
   mat-card{ 
     width: 100%;
     height: 100% ;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-color: #ECDFCC;
   }
  
 mat-card-header {
-  font-size: 1.5rem; 
-  font-weight: bold;
-  color: #333;
+  font-size: 1.2rem; 
+  font-weight: 500;
+  /* color: #333; */
   background-color: #f0f0f0;
   padding: 10px;
   border-bottom: 2px solid #ccc;
   border-radius: 4px 4px 0 0;
+  border-top-left-radius: 40px;
+  
 }
 
 
 mat-card-content {
+  border-top-left-radius: 40px;
   font-size: 1.1rem; 
   color: #555;
   line-height: 1.6;
   padding: 15px;
   background-color: #fafafa;
-  border-radius: 0 0 4px 4px; 
+  /* border-radius: 0 0 4px 4px;  */
+  border-bottom-left-radius:1px;
 }
 
-
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
 mat-card:hover {
   transform: scale(1.02); 
+}
+
+.btn-delete{
+  background-color: rgb(250, 155, 155);
+  color: rgb(253, 0, 0);
+  width: 50px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+.btn-update{
+  background-color: rgb(155, 215, 250);
+  color: rgb(0, 131, 253);
+  width: 50px;
+  border-radius: 5px;
+}
+.btn-delete:hover {
+  background-color: rgba(255, 17, 17, 0.205);
+  
+}
+.btn-update:hover {
+ background-color: rgba(17, 92, 255, 0.205);
+ 
+}
+
+.btn-new{
+  background-color: #fafafa;
+  /* border-radius: 5px; */
+  margin-bottom: 20px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.btn-new:hover{
+  background-color:#daf6fa ;
 }

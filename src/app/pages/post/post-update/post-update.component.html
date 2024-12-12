@@ -1,14 +1,14 @@
-<h2 >Hello Kupal! </h2>
+<h3  class="top">Update this post! </h3>
 <form [formGroup]="postForm" (ngSubmit)=" onSubmit()"> 
     <mat-dialog-content> 
-
+<mat-label>Title</mat-label>
     <mat-form-field>
-            <mat-label>Title</mat-label>
             <input matInput formControlName="title">
           </mat-form-field>
-    
+   
+          <mat-label>Content</mat-label>
           <mat-form-field>
-            <mat-label>Content</mat-label>
+            
             <textarea matInput formControlName="content"></textarea>
           </mat-form-field>
     

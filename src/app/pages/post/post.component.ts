@@ -8,11 +8,12 @@ import { MatDialog } from '@angular/material/dialog';
 import { PostDialogComponent } from './post-dialog/post-dialog.component';
 import { PostUpdateComponent } from './post-update/post-update.component';
 import { PostDeleteComponent } from './post-delete/post-delete.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-post',
   standalone: true,
-  imports: [MatGridListModule, MatCardModule,MatButtonModule],
+  imports: [MatGridListModule, MatCardModule,MatButtonModule, MatIconModule],
   templateUrl: './post.component.html',
   styleUrls: ['./post.component.css']
 })

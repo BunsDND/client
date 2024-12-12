@@ -1,17 +1,17 @@
 
   <div style="padding: 30px"> 
-<button mat-button (click)="onFormAction()"> new post</button>
+<button class="btn-new" mat-button (click)="onFormAction()"> New Post</button>
 <mat-grid-list cols="4" rowHeight="2:1" style="padding: 5px">
 
         @for (post of posts; track $index) {
 
             <mat-grid-tile>
                 <mat-card appearance="outlined"> 
-                    <mat-card-header> {{post.title}}</mat-card-header> 
-                    <mat-card-content>{{post.content}} </mat-card-content>
+                    <mat-card-header>  <span style="margin-left: 20px;">{{ post.title }}</span></mat-card-header> 
+                    <mat-card-content class="cnt">{{post.content}} </mat-card-content>
                     <mat-card-actions align="end">
-                        <button mat-button (click)="onUpdate(post)">update</button>    
-                        <button mat-button (click)="onDelete(post)">delete</button>    
+                        <button class="btn-update" mat-icon-button (click)="onUpdate(post)"><mat-icon>edit</mat-icon></button>    
+                        <button class="btn-delete"  mat-icon-button  (click)="onDelete(post)"><mat-icon>delete</mat-icon></button>    
                     </mat-card-actions>
                 </mat-card>
             </mat-grid-tile>

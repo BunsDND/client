@@ -1,22 +1,19 @@
-<h2 >Hello Kupal! </h2>
-<form [formGroup]="postForm" (ngSubmit)="onSubmit()"> 
-    <mat-dialog-content> 
-
+<h3 class="top">Are you sure to delete this post?</h3>
+<form [formGroup]="postForm" (ngSubmit)="onSubmit()">
+  <mat-dialog-content>
+   <mat-label>Title</mat-label> 
+   <mat-form-field>
+      
+      <input class="inp" matInput formControlName="title" readonly />
+    </mat-form-field>
+<mat-label>Content</mat-label>
     <mat-form-field>
-            <mat-label>Title</mat-label>
-            <input matInput formControlName="title" readonly>
-          </mat-form-field>
-    
-          <mat-form-field>
-            <mat-label>Content</mat-label>
-            <input matInput formControlName="content" readonly>
-          </mat-form-field>
-    
-    </mat-dialog-content>
-    
-    
-    <mat-dialog-actions> 
-    <button type="submit" mat-dialog-close> Delete</button> 
-    
-    </mat-dialog-actions>
+      
+      <input  class="inp" matInput formControlName="content" readonly />
+    </mat-form-field>
+  </mat-dialog-content>
+
+  <mat-dialog-actions class="d-container">
+    <button class="del"  type="submit" mat-dialog-close>Delete</button>
+  </mat-dialog-actions>
 </form>
